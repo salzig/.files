@@ -1,3 +1,27 @@
 [user]
-	name = Ben Rexin
-	email = salzig+github@gmail.com
+  name = Ben Rexin
+  email = salzig+github@gmail.com
+[push]
+  default = tracking
+[pack]
+  threads = 0
+[color]
+  ui=auto
+[color "status"]
+  untracked = cyan
+  added = yellow
+[color "branch"]
+  remote = yellow
+[alias]
+  st = status
+  up = pull --rebase
+  ci = commit
+  x = !open -a gitx .
+[gui]
+  wmstate = zoomed
+  geometry = 1680x969+0+22 505 564
+[core]
+  excludesfile = /Users/ben/.gitignore
+  editor = vim -f
+[merge]
+  summary = true
