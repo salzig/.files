@@ -1,6 +1,6 @@
 # App Aliases
 alias mou="open -a mou"
-alias grep="ack"
+#alias grep="ack"
 alias big="figlet"
 
 # Git asliases
