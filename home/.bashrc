@@ -55,3 +55,7 @@ fi
 
 # Load rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# git hub
+eval "$(hub alias -s)"
+
