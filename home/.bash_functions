@@ -12,3 +12,7 @@ tstyle() {
 # Handy default styles
 alias light='tstyle "Solarized light"'
 alias dark='tstyle "Solarized dark"'
+
+reload() {
+  source ~/.bashrc
+}
