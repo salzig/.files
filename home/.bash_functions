@@ -16,3 +16,7 @@ alias dark='tstyle "Solarized dark"'
 reload() {
   source ~/.bashrc
 }
+
+j() {
+  mkdir -p $1 && cd $1
+}
