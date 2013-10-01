@@ -66,3 +66,7 @@ eval "$(hub alias -s)"
 
 # NPM bins
 PATH=$PATH:/usr/local/share/npm/bin/
+
+# Go bins
+GOPATH="$HOME/.go"
+PATH=$HOME/.go/bin:$PATH
