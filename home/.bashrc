@@ -64,3 +64,5 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # git hub
 eval "$(hub alias -s)"
 
+# NPM bins
+PATH=$PATH:/usr/local/share/npm/bin/
