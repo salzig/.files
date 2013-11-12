@@ -21,13 +21,13 @@ case "$TERM" in
 esac
 
 if [ "$color_prompt" = yes ]; then
-    PS1='\[\033[01;32m\]\u\[\033[01;34m\]@\[\033[01;32m\]\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]'
+    export PS1='\[\033[01;32m\]\u\[\033[01;34m\]@\[\033[01;32m\]\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]'
 
 #    if [[ `declare -F __git_ps1` ]]; then
-      PS1="$PS1\[\033[01;32m\]$(__git_ps1)\[\033[00m\]"
+    export PS1=$PS1'\[\033[01;32m\]$(__git_ps1)\[\033[00m\]'
 #    fi
 
-    PS1="$PS1\$ "
+    export PS1=$PS1'\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -44,6 +44,7 @@ unset color_prompt force_color_prompt
 
 # add $HOME/bin to $PATH
 export PATH=~/bin:$PATH
+export PATH=/usr/local/bin/:$PATH
 
 # Function definitions.
 if [ -f ~/.bash_functions ]; then
