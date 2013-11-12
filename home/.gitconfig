@@ -27,3 +27,5 @@
   editor = vim -f
 [merge]
   summary = true
+[help]
+	autocorrect = 1
