@@ -17,7 +17,7 @@
   up = pull --rebase
   ci = commit
   x = !open -a gitx .
-  l = log --oneline -n 20
+  l = !git --no-pager log --oneline -n 20
   ll = log --oneline
 [gui]
   wmstate = zoomed
