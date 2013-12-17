@@ -20,3 +20,7 @@ reload() {
 j() {
   mkdir -p $1 && cd $1
 }
+
+togif() {
+ ffmpeg -i "$1" -pix_fmt rgb24 -r 10 %{"$1"%.*}.gif
+}
