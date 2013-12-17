@@ -66,7 +66,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 eval "$(hub alias -s)"
 
 # NPM bins
-PATH=$PATH:/usr/local/share/npm/bin/
+PATH=$PATH:/usr/local/share/npm/bin
 
 # Go bins
 GOPATH="$HOME/.go"
