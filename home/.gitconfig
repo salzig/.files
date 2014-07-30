@@ -18,8 +18,8 @@
   up = pull --rebase
   ci = commit -S
   x = !open -a gitx .
-  l = !git --no-pager log --oneline -n 20
-  ll = log --oneline
+  l = !git --no-pager log -n 20
+  ll = log
 [gui]
   wmstate = zoomed
   geometry = 1680x969+0+22 505 564
