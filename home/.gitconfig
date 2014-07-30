@@ -21,6 +21,7 @@
   l = !git --no-pager log -n 20
   ll = log
   g = grep --break --heading --line-number
+  do = !git stash && git up && git push && git stash pop
 [gui]
   wmstate = zoomed
   geometry = 1680x969+0+22 505 564
