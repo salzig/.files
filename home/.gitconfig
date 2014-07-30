@@ -1,6 +1,7 @@
 [user]
   name = Ben Rexin
   email = ben@rexin.at
+  signingkey = EC2C74CE
 [push]
   default = tracking
 [pack]
