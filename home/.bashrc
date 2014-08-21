@@ -1,3 +1,4 @@
+echo ".bashrc"
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
@@ -46,16 +47,6 @@ unset color_prompt force_color_prompt
 # add $HOME/bin to $PATH
 export PATH=~/bin:$PATH
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
-
-# Function definitions.
-if [ -f ~/.bash_functions ]; then
-    . ~/.bash_functions
-fi
-
-# Alias definitions.
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
 
 # Load Z
 . `brew --prefix`/etc/profile.d/z.sh
