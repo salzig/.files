@@ -22,5 +22,5 @@ j() {
 }
 
 togif() {
- ffmpeg -i "$1" -pix_fmt rgb24 -r 10 %{"$1"%.*}.gif
+ ffmpeg -i "$1" -pix_fmt rgb24 -r 10 %{$1%.*}.gif
 }
