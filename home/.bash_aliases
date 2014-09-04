@@ -12,6 +12,4 @@ alias gu="git pull"
 alias gp="git push"
 alias gs="git status"
 
-# pure lazyness
-alias pr='hub pull-request'
 
