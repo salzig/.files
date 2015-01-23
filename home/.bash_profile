@@ -16,6 +16,6 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-
+echo
 date +"%A, %d. %B" | toilet -t -f future --metal
 echo
