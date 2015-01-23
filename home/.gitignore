@@ -44,5 +44,8 @@ Session.vim
 ## Java
 *.class
 
+## Ruby
+*.gem
+
 ## Ausnahmen
 !.gitignore
