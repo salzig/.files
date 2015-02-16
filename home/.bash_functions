@@ -24,3 +24,9 @@ j() {
 togif() {
  ffmpeg -i "$1" -pix_fmt rgb24 -r 10 %{$1%.*}.gif
 }
+
+# server `pwd` via http
+serve() {
+  ruby -run -e httpd . -p ${1:-9090}
+}
+
