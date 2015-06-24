@@ -24,6 +24,7 @@
   do = !git stash && git up && git push && git stash pop
   pr = !hub pull-request
   lol = !echo lol
+  authors = !git log --format='%aN <%aE>' | sort -u
 [gui]
   wmstate = zoomed
   geometry = 1680x969+0+22 505 564
