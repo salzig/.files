@@ -10,6 +10,8 @@ export HISTCONTROL=ignoreboth
 export HISTSIZE=10000
 export HISTFILESIZE=10000
 
+export EDITOR=vim
+
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
