@@ -10,3 +10,9 @@ set cursorline
 " highlight cursorline
 highlight cursorline term=reverse cterm=reverse guibg=Grey90
 
+" expand tab to spaces
+set expandtab
+
+" number of spaces to insert as tab
+set tabstop=2
+
