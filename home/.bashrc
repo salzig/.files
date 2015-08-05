@@ -64,3 +64,8 @@ PATH=$PATH:/usr/local/share/npm/bin
 # Go bins
 GOPATH="$HOME/.go/"
 PATH=$HOME/.go/bin:$PATH
+
+if [ -f ~/.bashrc.local ]; then
+  . ~/.bashrc.local
+fi
+
