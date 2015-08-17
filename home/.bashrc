@@ -55,6 +55,9 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 # Load rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
 # git hub
 eval "$(hub alias -s)"
 
