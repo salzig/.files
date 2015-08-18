@@ -3,6 +3,10 @@ function title {
   printf "\033]0;%s\007" "$(echo $@)"
 }
 
+function t {
+  title "$(basename $(pwd)) $@"
+}
+
 # Tell Style
 tstyle() {
  STYLE=${1:-Default}
