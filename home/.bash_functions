@@ -1,6 +1,6 @@
 # Change Title
 function title {
-  printf "\033]0;%s\007" "$1"
+  printf "\033]0;%s\007" "$(echo $@)"
 }
 
 # Tell Style
