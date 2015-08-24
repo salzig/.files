@@ -12,6 +12,10 @@ export HISTFILESIZE=10000
 
 export EDITOR=vim
 
+# Use ! as history expansion character
+# use / as quick substitution character
+export histchars='!/'
+
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
