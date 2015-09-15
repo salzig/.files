@@ -14,7 +14,7 @@ export EDITOR=vim
 
 # Use ! as history expansion character
 # use / as quick substitution character
-export histchars='!/'
+export histchars='!_'
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
