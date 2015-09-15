@@ -41,3 +41,6 @@ serve() {
   ruby -run -e httpd . -p ${1:-9090}
 }
 
+dme() {
+  eval "$(docker-machine env $1)"
+}
