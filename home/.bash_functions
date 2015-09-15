@@ -7,6 +7,13 @@ function t {
   title "$(basename $(pwd)) $@"
 }
 
+# for real lazy workers -> z to project and set title
+function w {
+  z $1
+  shift
+  t $@
+}
+
 # Tell Style
 tstyle() {
  STYLE=${1:-Default}
