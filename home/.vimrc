@@ -5,10 +5,10 @@ syntax on
 set number
 
 " enable cusor line
-set cursorline
+"set cursorline
 
 " highlight cursorline
-highlight cursorline term=reverse cterm=reverse guibg=Grey90
+"highlight cursorline term=reverse cterm=reverse guibg=Grey90
 
 " expand tab to spaces
 set expandtab
