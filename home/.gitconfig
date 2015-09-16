@@ -1,7 +1,6 @@
 [user]
   name = Ben Rexin
   email = ben@rexin.at
-  signingkey = EC2C74CE
 [push]
   default = tracking
 [pack]
@@ -16,10 +15,11 @@
 [alias]
   st = status
   up = pull --rebase
-  ci = commit -S
+  ci = commit
   x = !open -a gitx .
   l = !git --no-pager log -n 20
   ll = log
+  co = checkout
   g = grep --break --heading --line-number
   do = !git stash && git up && git push && git stash pop
   pr = !hub pull-request
