@@ -10,3 +10,7 @@ alias big="figlet"
 # Lolcommit init
 alias lolit='lolcommits --enable --fork --stealth --delay=4'
 
+# lazy docker
+alias dm='docker-machine'
+alias dc='docker-compose'
+alias d='docker'
