@@ -15,4 +15,4 @@ set expandtab
 
 " number of spaces to insert as tab
 set tabstop=2
-
+set shiftwidth=2
