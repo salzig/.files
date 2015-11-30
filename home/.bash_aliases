@@ -15,3 +15,7 @@ alias dm='docker-machine'
 alias dc='docker-compose'
 alias ds='docker-swarm'
 alias d='docker'
+
+# Typos
+alias gi='cowsay -f eyes'
+
