@@ -45,6 +45,7 @@ Session.vim
 
 ## Ruby
 *.gem
+.byebug_history
 
 ## Vagrant
 .vagrant/
