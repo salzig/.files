@@ -78,3 +78,6 @@ if [ -f ~/.bashrc.local ]; then
   . ~/.bashrc.local
 fi
 
+# sry pry, i hate you!
+export DISABLE_PRY_RAILS=1
+
