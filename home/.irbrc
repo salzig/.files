@@ -1,9 +1,13 @@
 #!/usr/bin/env ruby
 
+require 'irb/completion'
+require 'irb/ext/history'
+require 'irb/ext/save-history'
+
 # irb history
-IRB.conf[:EVAL_HISTORY] = 1000
+IRB.conf[:EVAL_HISTORY] = 0
 IRB.conf[:SAVE_HISTORY] = 1000
-IRB.conf[:HISTORY_FILE] = File::expand_path("~/.irb_history")
+IRB.conf[:AUTO_INDENT] = false
 
 # load .railsrc in rails environments
 railsrc_path = File.expand_path('~/.railsrc')
