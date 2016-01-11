@@ -21,3 +21,5 @@ if defined? Rails
   default_url_options[:host] = "localhost"
 end
 
+puts `date +'  %H:%M' | toilet -t --metal`
+
