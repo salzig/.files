@@ -19,3 +19,5 @@ alias d='docker'
 # Typos
 alias gi='cowsay -f eyes'
 
+# fun
+alias computer,='sudo '
