@@ -16,6 +16,9 @@ alias dc='docker-compose'
 alias ds='docker-swarm'
 alias d='docker'
 
+# lazy ruby
+alias be='bundle exec'
+
 # Typos
 alias gi='cowsay -f eyes'
 
