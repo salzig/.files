@@ -26,6 +26,7 @@
   pr = !hub pull-request
   lol = !echo lol
   authors = !git log --format='%aN <%aE>' | sort -u
+  signoff-rebase = "!EDITOR='sed -i -re s/^pick/e/' sh -c 'git rebase -i $1 && while test -f .git/rebase-merge/interactive; do git commit --amend --gpg-sign --no-edit && git rebase --continue; done' -"
 [gui]
   wmstate = zoomed
   geometry = 1680x969+0+22 505 564
