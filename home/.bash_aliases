@@ -18,6 +18,7 @@ alias d='docker'
 
 # lazy ruby
 alias be='bundle exec'
+alias ber='bundle exec rails'
 
 # Typos
 alias gi='cowsay -f eyes'
