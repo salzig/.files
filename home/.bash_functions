@@ -44,3 +44,11 @@ serve() {
 dme() {
   eval "$(docker-machine env $@)"
 }
+
+cls() {
+  clear
+  echo
+  date +"%A, %d. %B" | toilet -t -f future --metal
+  echo
+}
+
