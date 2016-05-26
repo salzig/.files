@@ -24,6 +24,7 @@ shopt -s checkwinsize
 case "$TERM" in
     xterm-color) color_prompt=yes;;
     xterm-256color) color_prompt=yes;;
+    screen) color_prompt=yes;;
     ansi) color_prompt=yes;;
 esac
 
