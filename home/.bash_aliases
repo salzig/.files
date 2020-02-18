@@ -7,6 +7,7 @@ alias mou="open -a mou"
 alias look="nohup qlmanage -p"
 #alias grep="ack"
 alias big="figlet"
+alias git="LANG=en_US.UTF-8 git"
 
 # Lolcommit init
 alias lolit='lolcommits --enable --fork --stealth --delay=4'
