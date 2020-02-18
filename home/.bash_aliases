@@ -4,6 +4,7 @@ alias ll="l -a"
 
 # App Aliases
 alias mou="open -a mou"
+alias look="nohup qlmanage -p"
 #alias grep="ack"
 alias big="figlet"
 
