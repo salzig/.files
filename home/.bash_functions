@@ -52,3 +52,22 @@ cls() {
   echo
 }
 
+hr() {
+  local start=$'\e(0' end=$'\e(B' line='qqqqqqqqqqqqqqqq'
+  local cols=${COLUMNS:-$(tput cols)}
+  while ((${#line} < cols))
+  do
+    line+="$line"
+  done
+  printf '%s%s%s\n' "$start" "${line:0:cols}" "$end"
+}
+
+error_hr() {
+  local response=$? color=$'\033[1;91m' coloroff=$'\033[0m'
+  if [ $response -ne 0 ] && [ $response -lt 127 ]; then
+    printf '%s' "$color"
+    hr
+    printf '%s' "$coloroff"
+  fi
+}
+
