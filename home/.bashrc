@@ -25,11 +25,12 @@ case "$TERM" in
     xterm-color) color_prompt=yes;;
     xterm-256color) color_prompt=yes;;
     screen) color_prompt=yes;;
+    xterm-kitty) color_prompt=yes;;
     ansi) color_prompt=yes;;
 esac
 
 if [ "$color_prompt" = yes ]; then
-    export PS1='\[\033[01;32m\]\u\[\033[01;34m\]@\[\033[01;32m\]\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]'
+    export PS1='\[\033[01;32m\]\u\[\033[01;34m\]@\[\033[01;37m\]\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]'
 
 #    if [[ `declare -F __git_ps1` ]]; then
     export PS1=$PS1'\[\033[01;32m\]$(__git_ps1)\[\033[00m\]'
@@ -51,35 +52,16 @@ fi
 unset color_prompt force_color_prompt
 
 # add $HOME/bin to $PATH
-export PATH=~/bin:$PATH
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
-
-# Load Z
-. `brew --prefix`/etc/profile.d/z.sh
-
-# Load rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-export NVM_DIR=~/.nvm
-if [ -f $(brew --prefix nvm)/nvm.sh ]; then
-  source $(brew --prefix nvm)/nvm.sh
-fi
-
-# git hub
-eval "$(hub alias -s)"
-
-# NPM bins
-PATH=$PATH:/usr/local/share/npm/bin
-PATH=~/bin:$PATH
-
-# Go bins
-GOPATH="$HOME/.go/"
-PATH=$HOME/.go/bin:$PATH
 
 if [ -f ~/.bashrc.local ]; then
   . ~/.bashrc.local
 fi
 
-# sry pry, i hate you!
-export DISABLE_PRY_RAILS=1
+# Load Z
+source /usr/local/etc/profile.d/z.sh
 
+# Load ASDF Version Manager
+source /usr/local/opt/asdf/asdf.sh
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
