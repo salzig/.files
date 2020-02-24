@@ -11,7 +11,7 @@ alias big="figlet"
 alias git="LANG=en_US.UTF-8 git"
 
 # Lolcommit init
-alias lolit='lolcommits --enable --fork --stealth --delay=4'
+alias lolit='ASDF_RUBY_VERSION=2.6.3 lolcommits --enable --fork --stealth --delay=4'
 
 # lazy docker
 alias dm='docker-machine'
