@@ -16,3 +16,6 @@ set expandtab
 " number of spaces to insert as tab
 set tabstop=2
 set shiftwidth=2
+
+" for some reason backspace stoped working, reintroduce 'defaults'
+set backspace=indent,eol,start
