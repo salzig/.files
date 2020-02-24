@@ -2,6 +2,9 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 
+echo
+date +"%A, %d. %B" | toilet -t -f future --metal
+echo
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
@@ -16,6 +19,3 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-echo
-date +"%A, %d. %B" | toilet -t -f future --metal
-echo
