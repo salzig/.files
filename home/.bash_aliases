@@ -1,6 +1,7 @@
 # Shell Aliases
 alias l="ls -lh"
 alias ll="l -a"
+alias preview="qlmanage 2>/dev/null -p"
 
 # App Aliases
 alias mou="open -a mou"
