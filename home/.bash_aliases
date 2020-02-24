@@ -31,3 +31,5 @@ alias gi='cowsay -f eyes'
 
 # fun
 alias computer,='sudo '
+alias bell='echo -ne "\a"'
+alias fertig='notification "Fertig"; say "Fertig"'
