@@ -11,6 +11,12 @@ if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
 
+# Variable definitions.
+echo "Source: bash_variables"
+if [ -f ~/.bash_variables ]; then
+    . ~/.bash_variables
+fi
+
 # Function definitions.
 echo "Source: bash_functions"
 if [ -f ~/.bash_functions ]; then
