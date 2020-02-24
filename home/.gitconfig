@@ -36,6 +36,7 @@
 [merge]
   summary = true
   conflictStyle = diff3
+  ff=only
 [help]
 	autocorrect = 1
 [format]
