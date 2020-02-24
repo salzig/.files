@@ -23,6 +23,9 @@ alias d='docker'
 alias be='bundle exec'
 alias ber='bundle exec rails'
 
+# lazy ssh
+alias sshpassword='ssh -o PreferredAuthentications=password -o PubkeyAuthentication=no'
+
 # Typos
 alias gi='cowsay -f eyes'
 
