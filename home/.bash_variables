@@ -19,3 +19,6 @@ export LDFLAGS="-L/usr/local/opt/bison/lib"
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
 export PATH=$HOME/bin:$PATH
+
+# Erlang REPL
+export ERL_AFLAGS="-kernel shell_history enabled"
