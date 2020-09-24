@@ -58,10 +58,11 @@ if [ -f ~/.bashrc.local ]; then
   . ~/.bashrc.local
 fi
 
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
 # Load Z
 source /usr/local/etc/profile.d/z.sh
 
 # Load ASDF Version Manager
 source /usr/local/opt/asdf/asdf.sh
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
