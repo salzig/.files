@@ -36,6 +36,7 @@
 [core]
   excludesfile = /Users/ben/.gitignore
   editor = vim -f
+  attributesfile = /Users/ben/.gitattributes
 [merge]
   summary = true
   conflictStyle = diff3
