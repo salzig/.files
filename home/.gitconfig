@@ -49,3 +49,5 @@
   tool = opendiff
 [fetch]
 	prune = true
+[init]
+	defaultBranch = main
