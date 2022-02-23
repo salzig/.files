@@ -51,3 +51,5 @@
 	prune = true
 [init]
 	defaultBranch = main
+[rerere]
+	enabled = true
