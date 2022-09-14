@@ -4,6 +4,7 @@
   signingkey = B36B9129
 [push]
   default = tracking
+	autoSetupRemote = true
 [pack]
   threads = 0
 [color]
