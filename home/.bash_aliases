@@ -2,6 +2,7 @@
 alias l="ls -lh"
 alias ll="l -a"
 alias preview="qlmanage 2>/dev/null -p"
+alias watch=viddy
 
 # App Aliases
 alias mou="open -a mou"
