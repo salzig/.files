@@ -31,6 +31,7 @@ alias sshpassword='ssh -o PreferredAuthentications=password -o PubkeyAuthenticat
 
 # Typos
 alias gi='cowsay -f eyes'
+alias ghit='gti'
 
 # fun
 alias computer,='sudo '
