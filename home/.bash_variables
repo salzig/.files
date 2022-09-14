@@ -6,8 +6,6 @@ export DISABLE_PRY_RAILS=1
 
 export LANG="en_US.UTF-8"
 
-export BASH_SILENCE_DEPRECATION_WARNING=1
-
 export PATH=$HOME/bin:$PATH
 
 export KUBECONFIG=$(ls -1 ~/.kube/config.d/*.yaml | tr "\n" ":")
