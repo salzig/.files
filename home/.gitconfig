@@ -54,3 +54,5 @@
 	defaultBranch = main
 [rerere]
 	enabled = true
+[branch]
+	autosetuprebase = always
