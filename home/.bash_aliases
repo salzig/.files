@@ -19,6 +19,8 @@ alias dm='docker-machine'
 alias dc='docker-compose'
 alias ds='docker-swarm'
 alias d='docker'
+alias k='kubectl'
+alias c='kubectx'
 
 # lazy ruby
 alias be='bundle exec'
