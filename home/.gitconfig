@@ -17,7 +17,7 @@
 [alias]
   st = status
   up = pull --rebase
-  ci = commit -S
+  ci = commit
   x = !open -a gitx .
   l = !git --no-pager log -n 20
   ll = log
