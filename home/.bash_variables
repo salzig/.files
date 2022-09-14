@@ -1,8 +1,6 @@
 # ansible: How do I disable cowsay? - http://docs.ansible.com/ansible/faq.html
 export ANSIBLE_NOCOWS=1
 
-RUBY_CONFIGURE_OPTS=--with-readline-dir="$(brew --prefix readline)"
-
 # sry pry, i hate you!
 export DISABLE_PRY_RAILS=1
 
