@@ -20,5 +20,7 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 
 export PATH=$HOME/bin:$PATH
 
+export KUBECONFIG=$(ls -1 ~/.kube/config.d/*.yaml | tr "\n" ":")
+
 # Erlang REPL
 export ERL_AFLAGS="-kernel shell_history enabled"
