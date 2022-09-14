@@ -70,4 +70,6 @@ error_hr() {
     printf '%s' "$coloroff"
   fi
 }
-
+command_not_found_handler() {
+  cowsay -f ghostbusters "$1 not found" | toilet -f term --gay
+}
